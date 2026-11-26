@@ -1,0 +1,36 @@
+[project]
+name = "aurum-market"
+version = "0.1.0"
+description = "Búsqueda semántica y control de catálogo mediante bases de datos vectoriales"
+requires-python = ">=3.12,<3.13"
+
+dependencies = [
+    # Procesamiento de datos
+    "numpy",
+    "pandas",
+
+    # Embeddings y búsqueda semántica
+    "sentence-transformers",
+    "scikit-learn",
+    "rank-bm25",
+
+    # Indexación vectorial
+    "faiss-cpu",
+
+    # Base de datos vectorial
+    "qdrant-client",
+
+    # Visualización
+    "matplotlib",
+    "plotly",
+
+    # Configuración
+    "python-dotenv",
+
+    # Notebooks
+    "jupyterlab",
+    "ipykernel",
+
+    # Testing
+    "pytest",
+]
